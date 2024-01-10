@@ -1,0 +1,59 @@
+// Заголовки, загальні БЕМ блоки та інше...
+//Titles and Text========================================================================================================================================================
+
+.title {
+    &-big{
+        font-weight: 500;
+        color: #091133;
+        font-size: calc(20px + 30 * (100vw / 1920));
+        line-height: math.div(66,50);
+        letter-spacing: rem(1);
+    }
+    &-small{
+        font-weight: 500;
+        color: #091133;
+        font-size: calc(13px + 23 * (100vw / 1920));
+        line-height: math.div(48,36);
+    }
+    
+}
+
+.text {
+    &-big{
+        font-size: calc(12px + 6 * (100vw / 1920));
+        font-weight: 400;
+        line-height: math.div(30,18);
+        color: #0E1A50;
+    }
+    &-small{
+        font-size: calc(11px + 5 * (100vw / 1920));
+        font-weight: 400;
+        line-height: math.div(26,16);
+        color: #6F7CB2;
+        
+    }
+
+}
+
+//sub-info========================================================================================================================================================
+.basic{
+    &-icon{
+        width: rem(36);
+        height: rem(36);
+        margin-bottom: rem(14);
+        color: #000;
+    }
+    &-title{
+        font-size: calc(11px + 5 * (100vw / 1920));
+        font-weight: 500;
+        line-height: math.div(26,16);
+        color: #091133;
+        margin-bottom: rem(6);
+    }
+    &-text{
+        @include adaptiveValue("font-size",12,8);
+        font-weight: 400;
+        line-height: math.div(18,12);
+        color: #5D6970;
+    }
+}
